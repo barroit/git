@@ -644,7 +644,7 @@ static int similar_enough(const char *cmd, unsigned int dist)
 	 * inputs) is too lenient for short inputs, e.g., allowing 'a' to match
 	 * 'add'.
 	 */
-	unsigned int threshold = len < 3 ? 1 : len < 6 ? 3 : 6;
+	unsigned int threshold = len < 3 ? 1 : len < 6 ? 4 : 6;
 
 	return dist < threshold;
 }
